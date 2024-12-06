@@ -1,0 +1,32 @@
+.main-cointainer{
+    background-color: #020202;
+    width: 18%;
+    height: 100vh;
+}
+
+hr{
+    border: 1px solid grey;
+        margin-top: 18px;
+
+}
+
+.logo-box{
+    display: flex;
+    gap: 20px;
+    /* margin-top: 20px; */
+    padding: 30px;
+    margin-left: 10px;
+}
+.home-btn{
+    display: flex;
+    gap: 20px;
+
+    margin-left: 35px;
+    margin-top: 12px;
+}
+.subscription{
+    font-size: 17px;
+    color: grey;
+    margin-left: 29px;
+    margin-top: 10px;
+}
