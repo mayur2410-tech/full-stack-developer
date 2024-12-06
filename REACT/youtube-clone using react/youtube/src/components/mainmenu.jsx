@@ -20,25 +20,46 @@ function Mainmenu() {
     return (
         <>
             <div className="mainmenu">
+
+
                 <div className="nav-bar">
-                    {/* <div className="user-option">
-        <img src='https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/02.youtube-clone/assets/create.png?raw=true' />
-        <img src='https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/02.youtube-clone/assets/more.png?raw=true' />
-        <img src='https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/02.youtube-clone/assets/bell.png?raw=true' />
-        <img src='https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/02.youtube-clone/assets/Ellipse 1.png?raw=true' />
-    </div> */}
 
-
-                    <div className="serach-box">
-                        <div className="serach">
-                            <p className='para'>Search</p>
-                            <img src='https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/02.youtube-clone/assets/search.png?raw=true' className='search-btn' />
-
+                    <div className="navbar">
+                        <div className="search-container">
+                            <input type="text" placeholder="Search" className="search-input" />
+                            <div>
+                                <button className="search-button">
+                                    <img src='https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/02.youtube-clone/assets/search.png?raw=true'
+                                        alt="Search" className="icon" />
+                                </button>
+                                <button className="mic-button">
+                                    <img src='https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/02.youtube-clone/assets/mic.png?raw=true'
+                                        className="icon" />
+                                </button>
+                            </div>
                         </div>
-                        <img src='https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/02.youtube-clone/assets/mic.png?raw=true' className='mic-btn' />
+                        <div className="navbar-icons">
+                            <button className="icon-button">
+                                <img src='https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/02.youtube-clone/assets/create.png?raw=true' />
+                            </button>
+                            <button className="icon-button">
+                                <img src='https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/02.youtube-clone/assets/more.png?raw=true' />
+                            </button>
+                            <button className="icon-button">
+                                <img src='https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/02.youtube-clone/assets/bell.png?raw=true' />
+                            </button>
+                            <img src='https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/02.youtube-clone/assets/Ellipse 1.png?raw=true'
 
-
+                                alt="User Profile"
+                                className="profile-image"
+                            />
+                        </div>
                     </div>
+
+
+
+
+
 
 
 
@@ -69,7 +90,7 @@ function Mainmenu() {
                 <div className="strip">
                     {main.map((i) => (
                         <div key={i.id}>
-                            <img src={i.img} />
+                            <img src={i.img} className='img-main' />
                             <div id='logo1'>
                                 <img src={i.logo} />
                             </div>
@@ -79,19 +100,7 @@ function Mainmenu() {
 
                     ))}
 
-                    {/* <div><img src="https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/02.youtube-clone/assets/Thumbnail-8.png?raw=true" className='xxx' /><div id="logo1"><img src="https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/02.youtube-clone/assets/Ellipse 1 (1).png?raw=true" /></div><p className="mayur">Infinix Note 12:<br /> AMOLED  Helio G88 Soc!     </p><p className="thumbnail">ATC Android ToTo Company<img className="verify" src="https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/02.youtube-clone/assets/verified.png?raw=true" /><br />4.2M views 2 days ago</p></div>
-                        <div><img src="https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/02.youtube-clone/assets/Thumbnail-8.png?raw=true" className='xxx' /><div id="logo1"><img src="https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/02.youtube-clone/assets/Ellipse 1 (1).png?raw=true" /></div><p className="mayur">My First UX Design case study-,<br /> This got me mu first job.</p><p className="thumbnail">Saptarshi Prakash<br />4.8K views 1 year ago</p></div>
-                        <div><img src="https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/02.youtube-clone/assets/Thumbnail-8.png?raw=true" className='xxx' /><div id="logo1"><img src="https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/02.youtube-clone/assets/Ellipse 1 (1).png?raw=true" /></div><p className="mayur"> My Mix</p><p className="thumbnail">Lopamudra Mitra, Anupam Roy,and mor</p></div>
-                
-                        <div><img src="https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/02.youtube-clone/assets/Thumbnail-8.png?raw=true" className='xxx' /><div id="logo1" ><img src="https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/02.youtube-clone/assets/Ellipse 1 (1).png?raw=true" /></div><p className="mayur">Bulbuli | Coke Studio Bangla |<br /> Season One | Ritu Raj X Nandita</p><p className="thumbnail">Coke Studio Bangla<img className="verify" src="https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/02.youtube-clone/assets/verified.png?raw=true" /><br />1.5M views 2 days ago</p></div>
-                        <div><img src="https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/02.youtube-clone/assets/Thumbnail-8.png?raw=true" className='xxx' /><div id="logo1"><img src="https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/02.youtube-clone/assets/Ellipse 1 (1).png?raw=true" /></div><p className="mayur">Infinix Note 12:<br /> AMOLED  Helio G88 Soc!     </p><p className="thumbnail">ATC Android ToTo Company<img className="verify" src="https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/02.youtube-clone/assets/verified.png?raw=true" /><br />4.2M views 2 days ago</p></div>
-                        <div><img src="https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/02.youtube-clone/assets/Thumbnail-8.png?raw=true" className='xxx' /><div id="logo1"><img src="https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/02.youtube-clone/assets/Ellipse 1 (1).png?raw=true" /></div><p className="mayur">My First UX Design case study-,<br /> This got me mu first job.</p><p className="thumbnail">Saptarshi Prakash<br />4.8K views 1 year ago</p></div>
-                        <div><img src="https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/02.youtube-clone/assets/Thumbnail-8.png?raw=true" className='xxx' /><div id="logo1"><img src="https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/02.youtube-clone/assets/Ellipse 1 (1).png?raw=true" /></div><p className="mayur"> My Mix</p><p className="thumbnail">Lopamudra Mitra, Anupam Roy,and mor</p></div>
-                
-                        <div><img src="https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/02.youtube-clone/assets/Thumbnail-8.png?raw=true" className='xxx' /><div id="logo1" ><img src="https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/02.youtube-clone/assets/Ellipse 1 (1).png?raw=true" /></div><p className="mayur">Bulbuli | Coke Studio Bangla |<br /> Season One | Ritu Raj X Nandita</p><p className="thumbnail">Coke Studio Bangla<img className="verify" src="https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/02.youtube-clone/assets/verified.png?raw=true" /><br />1.5M views 2 days ago</p></div>
-                        <div><img src="https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/02.youtube-clone/assets/Thumbnail-8.png?raw=true" className='xxx' /><div id="logo1"><img src="https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/02.youtube-clone/assets/Ellipse 1 (1).png?raw=true" /></div><p className="mayur">Infinix Note 12:<br /> AMOLED  Helio G88 Soc!     </p><p className="thumbnail">ATC Android ToTo Company<img className="verify" src="https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/02.youtube-clone/assets/verified.png?raw=true" /><br />4.2M views 2 days ago</p></div>
-                        <div><img src="https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/02.youtube-clone/assets/Thumbnail-8.png?raw=true" className='xxx' /><div id="logo1"><img src="https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/02.youtube-clone/assets/Ellipse 1 (1).png?raw=true" /></div><p className="mayur">My First UX Design case study-,<br /> This got me mu first job.</p><p className="thumbnail">Saptarshi Prakash<br />4.8K views 1 year ago</p></div>
-                        <div><img src="https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/02.youtube-clone/assets/Thumbnail-8.png?raw=true" className='xxx' /><div id="logo1"><img src="https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/02.youtube-clone/assets/Ellipse 1 (1).png?raw=true" /></div><p className="mayur"> My Mix</p><p className="thumbnail">Lopamudra Mitra, Anupam Roy,and mor</p></div> */}
+
                 </div>
 
 
