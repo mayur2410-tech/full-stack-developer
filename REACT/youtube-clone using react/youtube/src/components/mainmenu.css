@@ -80,9 +80,16 @@ background-color: white;
     background-color:rgb(63, 60, 60) ;
   padding: 4px 10px;
   font-size: 14px;
+  transition: all 0.3s ease-in-out;
     color: white;
     text-align: center; 
   
+}
+.navtext:hover {
+  /* background-color: #007bff;  */
+  color: #fff; /* White text */
+  box-shadow: 0 4px 15px rgba(0, 123, 255, 0.5); /* Glowing effect */
+  transform: scale(1.1); /* Slightly enlarge on hover */
 }
 .navtext.all{
     background-color: white;
@@ -131,4 +138,8 @@ background-color: white;
 .img-main{
     /* height: ; */
     width: 300px;
+    transition: all 0.4s ease-in-out;
+}
+.img-main:hover{
+  transform: scale(1.1); 
 }

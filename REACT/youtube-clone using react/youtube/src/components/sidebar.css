@@ -20,10 +20,17 @@ hr{
 .home-btn{
     display: flex;
     gap: 20px;
-
+    transition: all 0.3s ease-in-out;
     margin-left: 35px;
     margin-top: 12px;
 }
+.home-btn:hover {
+    background-color: #0b0909;
+    box-shadow: 0 4px 15px rgba(93, 166, 244, 0.5);
+    transform: scale(1.05);
+    border-radius: 8px; 
+  }
+ 
 .subscription{
     font-size: 17px;
     color: grey;
